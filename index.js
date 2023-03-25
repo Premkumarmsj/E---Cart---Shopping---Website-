@@ -195,6 +195,9 @@ function navSlide() {
    
     var photo5 = document.getElementById("img5");
     photo5.src = img5;
+
+
+
   
 
     function changeImage() {
@@ -333,3 +336,11 @@ function navSlide() {
     cartCount();
     getDataForLocalStorage();
   });
+
+
+  function myFunction(Prepic)
+  {
+      var fullImg = document.getElementById("productImg");
+      fullImg.src = Prepic.src;
+      
+  }
