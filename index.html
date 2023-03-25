@@ -1,289 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SHOPLANE - A Place For Shopping</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font-Awesome CDN -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Slick Files -->
+    <link rel="stylesheet" type="text/css" href="./slick/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick/slick/slick-theme.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./E-cart.css">
-    <title>E-Commerce-web</title>
- <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-</head>
-
-<body>
-    <header class="navbar-responsive">
-        <div class="navhead">
-            <h1 id="h1h" ">SHOP</h1>
-            <h1 id="h2h">LANE</h1>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- TopBar Start -->
+    <div id="top-bar">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="./index.html"
+          ><h4><span>SHOP</span>LANE</h4></a
+        >
+      </div>
+      <!-- Menu Items -->
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#clothing">Clothings</a></li>
+        <li><a href="#accessories">Accessories</a></li>
+      </ul>
+      <!-- Icons -->
+      <div class="icons">
+        <i class="fa fa-search"></i>
+        <div class="cart" id="cartIcon">
+          <a href="./checkout.html">
+            <i class="fa fa-shopping-cart">
+              <span id="cart-count"></span>
+            </i>
+          </a>
         </div>
-
-        <div class="navbar">
-            <a href="#" id="linc"><h1>HOME</h1></a>
-            <a href="#cls" id="linc"><h1>CLOTHINGS</h1></a> 
-            <a href="#acs" id="linc"><h1>ACCESSORIES</h1></a>
+        <i class="fa fa-user-circle-o"></i>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <div class="navui">
-            <img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png" alt="search"
-                id="navicon" width="30" height="30">
-            <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png"
-                alt="cart" id="navicon" width="30" height="30">
-            <img src="https://www.iconpacks.net/icons/2/free-icon-user-3296.png" alt="user" id="navicon" width="30"
-                height="30">
+      </div>
+    </div>
+   
+    <section id="banner">
+      <div class="bannersection">
+      <img src="./Images/home/banner/img1.png" alt="Image 1" width="1350px"/>
+      <img src="./Images/home/banner/img2.png" alt="Image 2" width="1350px"/>
+      <img src="./Images/home/banner/img3.png" alt="Image 3" width="1350px"/>
+      <img src="./Images/home/banner/img4.png" alt="Image 4" width="1350px" />
+      </div>
+    </section>
+    
+    <section id="features">
+      <div class="icon-container">
+        <div class="img-wrapper">
+          <img src="./Images/home/icon/icon1.png" alt="" />
         </div>
-    </header>
-    <main>
-
-        <div class="banner">
-            <div class="banner-in">
-
-                <img src="./Images/home/banner/img1.png" alt="1" id="banner-pic">
-                <img src="./Images/home/banner/img2.png" alt="2" id="banner-pic">
-                <img src="./Images/home/banner/img3.png" alt="3" id="banner-pic">
-                <img src="./Images/home/banner/img4.png" alt="4" id="banner-pic">
-            </div>
+        <h4>Free Delivery</h4>
+      </div>
+       <div class="icon-container">
+        <div class="img-wrapper">
+         <img src="./Images/home/icon/icon2.png" alt="" />
         </div>
-
-        <div class="feature-support">
-            <div class="feature-support-in">
-                <div class="iconimg" >
-                    <div class="icon-box" >
-                      
-                            <img src="./Images/home/icon/icon1.png" alt="" id="icon-box1">
-                          
-                    </div>
-                    <h3>Free Delivery</h3>
-                </div>
-                <div class="iconimg">
-                    <div class="icon-box">
-                        <img src="./Images/home/icon/icon2.png" alt="" id="icon-box1">
-                    </div>
-                    <h3>Money Back Guarranty</h3>
-                </div>
-                <div class="iconimg">
-                    <div class="icon-box">
-                        <img src="./Images/home/icon/icon3.png" alt="" id="icon-box1">
-                    </div>
-                    <h3>Always Support</h3>
-                </div>
-                <div class="iconimg">
-                    <div class="icon-box">
-                        <img src="./Images/home/icon/icon4.png" alt="" id="icon-box1">
-                    </div>
-                    <h3>Secure Payment</h3>
-                </div>
-            </div>
+    <h4>Money Back Gurantee</h4>
+      </div>
+      <div class="icon-container">
+        <div class="img-wrapper">
+          <img src="./Images/home/icon/icon3.png" alt="" />
         </div>
-        <section>
-            <div class="clothingsec" id="cls">
-                <div class="clothingsec-in">
-                    <div class="clothingsec-head">
-                        <h1> Clothing for Men and Women </h1>
-                    </div>
-
-                    <div class="Container-card">
-                        <div class="cbox">
-                            <div class="cbox-pic">
-                               <a href="./Clothing-sec.html"> <img src="./Images/clothings_m_w/men_navy_t-shirt.jpg" alt="main-img" width="100"
-                                    height="100"></a>
-                            </div>
-                            <div class="details">
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                        <div class="cbox">
-                            <div class="cbox-pic">
-                                <img src="./Images/clothings_m_w/menblack-main.jpg" alt="main-img" width="100"
-                                    height="100">
-                            </div>
-                            <div class="details">
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                        <div class="cbox">
-                            <div class="cbox-pic">
-                                <img src="./Images/clothings_m_w/shoe-main_img.jpg" alt="main-img" width="100"
-                                    height="100">
-                            </div>
-                            <div class="details">
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                        <div class="cbox">
-                            <div class="cbox-pic">
-                                <img src="./Images/clothings_m_w/wmenblack-main.jpg" alt="main-img" width="100"
-                                    height="100">
-                            </div>
-                            <div class="details">
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                        <div class="cbox">
-                            <div class="cbox-pic">
-                                <img src="./Images/clothings_m_w/wmenblue-main.jpg" alt="main-img" width="100"
-                                    height="100">
-                            </div>
-                            <div class="details">
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="accessories-sec" id="acs">
-                <div class="accessories-sec-in">
-                    <div class="accessories-sec-head">
-                        <h1> Accessories for Men and Women </h1>
-                    </div>
-
-                    <div class="Container-card">
-                        <div class="cbox">
-                            <div class="cbox-pic">
-                                <img src="./Images/accessories/smartwatch-1-main.jpg" alt="main-img" width="100"
-                                    height="100">
-                            </div>
-                            <div class="details">
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                        <div class="cbox" >
-                            <div class="cbox-pic">
-                                <img src="./Images/accessories/smartwatch-2-main.jpg" alt="main-img" width="100"
-                                    height="100">
-                            </div>
-                            <div class="details">
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                        <div class="cbox">
-                            <div class="cbox-pic">
-                                <img src="./Images/accessories/smartwatch3-main.jpg" alt="main-img" width="100"
-                                    height="100">
-                            </div>
-                            <div class="details" >
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                        <div class="cbox">
-                            <div class="cbox-pic">
-                                <img src="./Images/accessories/earbuds1-main.jpg" alt="main-img" width="100"
-                                    height="100">
-                            </div>
-                            <div class="details">
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                        <div class="cbox">
-                            <div class="cbox-pic">
-                                <img src="./Images/accessories/earbuds-2-main.jpg" alt="main-img" width="100"
-                                    height="100">
-                            </div>
-                            <div class="details">
-                                <h3>Men Navy Blue Solid SweatShirt</h3>
-                                <h4>United Color of Benetton</h4>
-                                <h3><strong>RS 2599</strong></h3>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-    </main>
+        <h4>Always Support</h4>
+      </div>
+      <div class="icon-container">
+             <div class="img-wrapper">
+               <img src="./Images/home/icon/icon4.png" alt="" />
+        </div>
+            <h4>Secure Payment</h4>
+      </div>
+    </section>
+   
+    <section id="clothing">
+        <h2 class="section-heading">Clothing for Men and Women</h2>
+        <div class="card-conatiner" id="clothingCards"></div>
+    </section>
+   
+    <section id="accessories">
+        <h2 class="section-heading">Accessories for Men and Women</h2>
+        <div class="card-conatiner" id="accessoriesCards"></div>
+    </section>
+   
     <footer>
-        <div class="footer-box">
-            <div class="foo-box">
-                <h3>ONLINE STORE</h3>
-                <a href="#">
-                    <h5>MEN CLOTHING</h5>
-                </a>
-                <a href="#">
-                    <h5>WOMEN CLOTHING</h5>
-                </a>
-                <a href="#">
-                    <h5>MEN ACCESSORIES</h5>
-                </a>
-                <a href="#">
-                    <h5>WOMEN ACCESSORIES</h5>
-                </a>
-            </div>
-            <div class="foo-box">
-                <h3>HELPFUL LINKS</h3>
-                <a href="#">
-                    <h5>HOME</h5>
-                </a>
-                <a href="#">
-                    <h5>ABOUT</h5>
-                </a>
-                <a href="#">
-                    <h5>CONTACT</h5>
-                </a>
-
-            </div>
-            <div class="foo-box">
-                <h3>PANTERS</h3>
-                <a href="#">
-                    <h5>ZARA</h5>
-                </a>
-                <a href="#">
-                    <h5>PANTALOONS</h5>
-                </a>
-                <a href="#">
-                    <h5>LEVIS</h5>
-                </a>
-                <a href="#">
-                    <h5>UCB</h5>
-                </a>
-                <a href="#">
-                    <h5>+ MANY MORE</h5>
-                </a>
-            </div>
-            <div class="foo-box">
-                <h3>ADDRESS</h3>
-                <a href="#">
-                    <h5>BUILDING 101</h5>
-                </a>
-                <a href="#">
-                    <h5>CENTRAL AVENUE</h5>
-                </a>
-                <a href="#">
-                    <h5>LA-902722</h5>
-                </a>
-                <a href="#">
-                    <h5>MEN ACCESSORIES</h5>
-                </a>
-                <a href="#">
-                    <h5>INDIA</h5>
-                </a>
-            </div>
-        </div>
+      <ul class="online-store">
+        <li><h3>Online Store</h3></li>
+        <li><a href="#">Men Clothing</a></li>
+        <li><a href="#">Women Clothing</a></li>
+        <li><a href="#">Men Accessories</a></li>
+        <li><a href="#">Women Accessories</a></li>
+      </ul>
+      <ul class="helpful-links">
+        <li><h3>Helpful Links</h3></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="patners">
+        <li><h3>Patners</h3></li>
+        <li><a href="#">Zara</a></li>
+        <li><a href="#">Pantaloons</a></li>
+        <li><a href="#">Levis</a></li>
+        <li><a href="#">Ucb</a></li>
+        <li><a href="#">+ Many More</a></li>
+      </ul>
+      <ul class="address">
+        <li><h3>Address</h3></li>
+        <li>Building 101</li>
+        <li>Central Avenue</li>
+        <li>LA - 902722</li>
+        <li>United States</li>
+      </ul>
     </footer>
-    <script src="./e-cart.js"></script>
-    <script src="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/jquery.min.js"></script>
-    <script src="./bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
-</body>
 
+        <script type="text/javascript" src="./silks.js"></script>
+    <script src="./index.js"></script>
+  </body>
 </html>
